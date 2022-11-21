@@ -1,6 +1,6 @@
 # 정올 문제풀이
 
-## 정올 링크 : <http://www.jungol.co.kr/bbs/board.php?bo_table=pbank&sca=py>
+### 정올 링크 : <http://www.jungol.co.kr/bbs/board.php?bo_table=pbank&sca=py>
 
 - 781~795 : 리스트1 문제풀이 (자가진단, 형성평가)
 - 801~814 : 선택제어문 문제풀이 (자가진단, 형성평가)
