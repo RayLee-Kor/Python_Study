@@ -1,0 +1,113 @@
+# 리스트 2 문제풀이 (자가진단)
+
+## 901
+```python
+score = [85.6, 79.5, 83.1, 80.0, 78.2, 75.0]
+num1, num2 = input().split()
+xscore = score[int(num1)-1] + score[int(num2)-1]
+print(xscore)
+```
+
+## 902
+```python
+a=input()
+b=input()
+c=input()
+d=input()
+e=input()
+newlist = [a,b,c,d,e]
+getlist = newlist[::-1]
+for i in getlist:
+    print(i)
+
+```
+
+## 903
+```pyhton
+words = []
+
+for i in range(10):
+    a = input()
+    words.append(a)
+
+ch = input()
+
+for num in words:
+    if num[-2] == ch:
+        print(num)
+
+```
+
+## 905
+``` python
+a=list(input().split(" "))
+getmin=1000
+for i in a :
+    if int(i)< getmin :
+        getmin = int(i)
+        
+print(getmin))
+```
+
+## 906
+```python
+a=list(map(int,input().split(" ")))
+getmin=1000
+getmax=0
+maxcount=0
+mincount=0
+for i in a :
+    if i>=100 :
+        if i< getmin :
+            getmin = i
+            mincount += 1
+            
+
+    elif i<100 :
+        if i>getmax :
+            getmax = i
+            maxcount += 1
+
+if mincount == 0 :
+    getmin = 100
+if maxcount == 0:
+    getmax = 100 
+
+print(getmax, getmin)
+```
+
+## 907
+```python
+a=list(input().split(" "))
+oddsum=0
+evensum=0
+num=0
+for i in a :
+    if num % 2 == 0 :
+        oddsum = oddsum + int(i)
+        num += 1
+    else :
+        evensum = evensum + int(i)
+        num += 1
+print("sum :", evensum)
+print("avg :", oddsum/5)
+```
+
+## 908
+```python
+a=list(map(int,(input().split(" "))))
+a.sort(reverse=True)
+for i in a :
+    print(i, end = " ")
+```
+
+## 909
+```python
+a=[]
+for e in range(5) :
+    get1=input()
+    a.append(get1)
+a.sort(reverse=True)
+for i in a :
+    print(i)
+```
