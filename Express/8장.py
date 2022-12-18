@@ -112,17 +112,38 @@ print(triangle.checkAngles())
 #06
 class Person() :
     def __init__(self,n=None,m=None,o=None,e=None):
-        self.name = n
-        self.mobile = m
-        self.office = o
-        self.email = e
+        self.__name = n
+        self.__mobile = m
+        self.__office = o
+        self.__email = e
 
         
     def __str__(self) :
-        return "("+str(self.name)+", mobile = "+str(self.mobile)+", office = "+str(self.office)+", email = "+str(self.email)+")"
+        return "("+str(self.__name)+", mobile = "+str(self.__mobile)+", office = "+str(self.__office)+", email = "+str(self.__email)+")"
 
     def setEmail(self, email) :
-        self.email=email
+        self.__email=email
+
+    def getEmail(self) :
+        return self.__email
+
+    def setMobile(self, mobile) :
+        self.__mobile=mobile
+
+    def getMobile(self) :
+        return self.__mobile
+
+    def setOffice(self, office) :
+        self.__office=office
+
+    def getOffice(self) :
+        return self.__office
+
+    def setName(self, name) :
+        self.__name=name
+
+    def getName(self) :
+        return self.__name
 
 p1 = Person("kim","1234567","kim@company.com")
 print(p1)
@@ -130,6 +151,7 @@ p2 = Person("Park","2345678")
 print(p2)
 p2.setEmail("park@company.com")
 print(p2)
+
 
 
 #07
